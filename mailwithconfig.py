@@ -8,7 +8,7 @@ server = smtplib.SMTP('smtp.gmail.com', 587)
 server.ehlo()
 server.starttls()
 server.ehlo()
-#need to replace config list with class 
+#need to replace config list with class, make sure this call actually works
 maillist = configfunctions.pullmailinfo("default.cfg")
 sender = maillist[0]
 senderpassword = maillist[1]
